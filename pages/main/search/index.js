@@ -10,7 +10,7 @@ export default function Search() {
 
   useEffect(() => {
     const filtered_content = library.filter((data) =>
-      data.title.includes(search)
+      data.title.includes(search?.toLowerCase())
     );
 
     setContent(filtered_content);
