@@ -30,7 +30,11 @@ export default function Menu(props) {
             onClick={() => {
               props.setPage(page.content);
             }}
-            className={props.page === page.content ? "active" : ""}
+            className={
+              props.page === page.content && props.page !== "qrcode"
+                ? "active"
+                : ""
+            }
           >
             <Image
               src={

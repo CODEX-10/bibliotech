@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   input {
     margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.3rem;
     border-radius: 25px;
     font-size: 0.8rem;
     border: 1px solid #fff;
