@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const status_color = {
-  pending: "red",
-  avaible: "green",
-  unavaible: "darkred",
-  delivered: "lightblue",
+  pending: "#fc3d01",
+  avaible: "#17901c",
+  unavaible: "#fc0101",
+  delivered: "#059df2",
 };
 
 export const Container = styled.div`

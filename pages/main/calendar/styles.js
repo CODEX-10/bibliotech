@@ -17,19 +17,19 @@ export const Container = styled.div`
         border-radius: 0.4rem;
 
         &[type="avaibled"] {
-          background: green;
+          background: #17901c;
         }
 
         &[type="unavaibled"] {
-          background: darkred;
+          background: #fc0101;
         }
 
         &[type="delivered"] {
-          background: lightblue;
+          background: #059df2;
         }
 
         &[type="pending"] {
-          background: red;
+          background: #fc3d01;
         }
       }
 
