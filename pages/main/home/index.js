@@ -28,7 +28,7 @@ export default function Home(props) {
         <p className="title">Meus livros</p>
         {library.map(
           (data, index) =>
-            data.location.status !== "delivered" && (
+            data.location.status === "pending" && (
               <Card
                 key={index}
                 photo={data.photo}

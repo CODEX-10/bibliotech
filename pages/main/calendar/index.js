@@ -7,20 +7,20 @@ import library from "../../../repository/library";
 export default function Calendar() {
   const legend = [
     { type: "avaibled", name: "Disponível" },
-    { type: "unavaibled", name: "Indisponível" },
+    { type: "unavaibled", name: "Locado" },
     { type: "pending", name: "Pendente" },
     { type: "delivered", name: "Entregue" },
   ];
 
   return (
     <Container>
-      <Header title="Livros locados" />
+      <Header title="Histórico de locações" />
       <Content>
         <div className="legend-container">
           {legend.map((data, index) => (
             <div key={index} className="legend">
               <div type={data.type} />
-              <p>{data.name}</p>
+              <span>{data.name}</span>
             </div>
           ))}
         </div>

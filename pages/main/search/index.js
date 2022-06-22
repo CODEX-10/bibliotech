@@ -16,6 +16,13 @@ export default function Search() {
     setContent(filtered_content);
   }, [search]);
 
+  const status_filter = {
+    pending: "unavaible",
+    avaible: "avaible",
+    delivered: "avaible",
+    unavaible: "unavaible",
+  };
+
   return (
     <Container>
       <Header title="Pesquisar" />
@@ -29,6 +36,7 @@ export default function Search() {
           <Card
             key={index}
             photo={data.photo}
+            status={status_filter[data.location.status]}
             title={data.title}
             author={data.author}
             created_at={data.created_at}

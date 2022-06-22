@@ -33,7 +33,7 @@ export const Container = styled.div`
         }
       }
 
-      p {
+      span {
         font-size: 0.6rem;
         font-weight: 500;
         margin-left: 0.15rem;
