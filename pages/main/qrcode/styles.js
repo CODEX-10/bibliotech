@@ -6,7 +6,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    height: 100%;
 
     .scanner {
       position: absolute;
